@@ -1,40 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register Button</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
-    .register-button {
-      background: linear-gradient(90deg, #333, #777);
-      color: white;
-      border: 2px solid #555;
-      padding: 15px 30px;
-      text-transform: uppercase;
-      font-size: 18px;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-    }
-    .register-button:hover {
-      background: #555;
-      color: #f4f4f4;
-      border-color: #333;
-      transform: scale(1.05);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script>
+        // Password Validation Function
+        function validatePassword() {
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            var minLength = 8;
+            var hasUpperCase = /[A-Z]/.test(password);
+            var hasLowerCase = /[a-z]/.test(password);
+            var hasDigits = /\d/.test(password);
+            var hasSpecialChars = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+
+            if (password.length < minLength) {
+                alert("Password must be at least " + minLength + " characters long.");
+                return false;
+            }
+
+            if (!hasUpperCase || !hasLowerCase || !hasDigits || !hasSpecialChars) {
+                alert("Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.");
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Password and confirmation do not match.");
+                return false;
+            }
+            return true;
+        }
+
+        // Email Validation Function
+        function validateEmail() {
+            var email = document.getElementById('email').value;
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+            return true;
+        }
+
+        // Text (Name) Validation Function
+        function validateText() {
+            var name = document.getElementById('name').value;
+            var nameRegex = /^[a-zA-Z\s]+$/; // Only letters and spaces allowed
+
+            if (name === "") {
+                alert("Name cannot be empty.");
+                return false;
+            }
+
+            if (!nameRegex.test(name)) {
+                alert("Name can only contain letters and spaces.");
+                return false;
+            }
+            return true;
+        }
+
+        // Main Validation Function for the Form
+        function validateForm() {
+            // Validate all fields before submitting the form
+            if (!validatePassword() || !validateEmail() || !validateText()) {
+                return false;  // Prevent form submission if any validation fails
+            }
+
+            alert("Form submitted successfully!");
+            return true;  // Allow form submission if all validations pass
+        }
+    </script>
 </head>
 <body>
-  <button class="register-button">Register with us today!</button>
+    <h2>Registration Form</h2>
+    <form onsubmit="return validateForm()">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
