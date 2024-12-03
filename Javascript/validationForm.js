@@ -65,7 +65,3 @@ function validateRegForm() {
   alert("Registration complete!");
   return true;
 } 
-
-function changeImage() {
-    document.getElementById('myimage').src = "compman.gif";
-}
