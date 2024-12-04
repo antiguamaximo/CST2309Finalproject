@@ -12,19 +12,17 @@ function validatePassword() {
   if (password.length < minLength){
     alert("Password must be at least "+ minLength+" characters long.");
     return false;
-  }
-
-  if (!hasDigits || !hasLowerCase || !hasSpecialChars || !hasUpperCase) {
+  } else if(!hasDigits || !hasLowerCase || !hasSpecialChars || !hasUpperCase) {
     alert("Password must have at least one digit, a lower and upper case letter, and a special character");
     return false;
-  }
-
-  if (password != cPassword) {
+  } else if (password != cPassword) {
     alert("Passwords do not match");
     return false;
+  } else 
+  {
+    return true;
   }
 
-  return true;
 
 }
 
@@ -35,13 +33,11 @@ function validateName() {
   if (fname === "") {
       alert("Name cannot be empty.");
       return false;
-  }
-
-  if (!fnameRegex.test(fname)) {
+  } else if (!fnameRegex.test(fname)) {
       alert("Name can only contain letters and spaces.");
       return false;
-  }
-  return true;
+  } else {return true;}
+  
 }
 
 function validateEmail() {
@@ -53,15 +49,19 @@ function validateEmail() {
       alert("Please enter a valid email address.");
       return false;
 
+  } else {
+      return true;
   }
-  return true;
+  
 }
 
 
 function validateRegForm() {
   if (!validatePassword() || validateName() ||  validateEmail()) {
       return false;
+  }else {
+    alert("Registration complete!");
+    return true;
   }
-  alert("Registration complete!");
-  return true;
+
 }
