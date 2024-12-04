@@ -1,7 +1,7 @@
 function validatePassword() {
 
   var password = document.regForm.password.value;
-  var cpassword = document.getElementById("cpassword").value;
+  var cPassword = document.getElementById("cPassword").value;
 
   var hasUpperCase = /[A-Z]/.test(password);
   var hasLowerCase = /[a-z]/.test(password);
@@ -19,7 +19,7 @@ function validatePassword() {
     return false;
   }
 
-  if (password != confirmPassword) {
+  if (password != cPassword) {
     alert("Passwords do not match");
     return false;
   }
@@ -64,8 +64,4 @@ function validateRegForm() {
   }
   alert("Registration complete!");
   return true;
-} 
-
-function changeImage() {
-    document.getElementById('myimage').src = "compman.gif";
 }

@@ -17,29 +17,24 @@
         <title>Membership</title>
 
         <link rel="icon" href="./ASSETS/ej_smallLogo.png">
-        <link rel="stylesheet" href="./CSS/_base.css">
-        <link rel="stylesheet" href="./CSS/_styling.css">
+        <link rel="stylesheet" href="./CSS/ej_base.css">
+        <link rel="stylesheet" href="./CSS/ej_styling.css">
         <script src="./Javascript/baseJS.js" defer></script>
-        <script src="./Javascript/validationForm.js" defer></script>
-
     </head>
     <body>
-        <header class="gymHeader" style="padding: 10px;">
+        <header class="gymHeader">
 
             <h1 class="gymLogo">
-
-                <img src="./ASSETS/ej_logo.png">
-
+                <img src="./ASSETS/ej_logo.png" loading="lazy">
             </h1>
 
             <ul class="gymNav">
-                
                 <li><a href="#">Home</a></li>
                 <li><a href="./ej_membership.html">Membership</a></li>
-                <li><a href="./ej_gallery.html">Gallery</a></li>
                 <li><a href="./index.html">About Us</a></li>
+                <li><a href="./ej_contactus.html">Contact Us</a></li>
             </ul>
-        
+
         </header>
 
         <main class="membershipPage">
@@ -54,29 +49,24 @@
                         <label>Password</label>
                         <input name="password"  type="password" size="50" >
                         <label>Confirm password</label>
-                        <input name="cpassword" id="cpassword" type="password" size="50"> <br>
+                        <input name="cPassword" id="cPassword" type="password" size="50"> <br>
 
-                        <button type="submit" value="submit">Register</button>
+                        <button class="regButton" type="submit" value="submit">Register</button>
                     </form>
             </div>
 
         </main>
-
         <footer>
             <div class="footerLinks">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="index.html">About Us</a></li>
                     <li><a href="ej_membership.html">Membership</a></li>
+                    <li><a href="./ej_contactus.html">Contact Us</a></li>
                 </ul>
             </div>
-        
-            <address>
-                &#169; <script>document.write(new Date().getFullYear())</script> El JIM <br>CONTACT US: <br> &#9743; <a href="tel:+13217032793"> +1-321-703-2793</a><br>&#9993; <a href="mailto:example@gnone[.]com">eljim@realgym.com</a>
-            </address>
-            <div class="footerImage">
-                <img src="./ASSETS/ej_logo.png">
-            </div>
+
+            <img src="./Assets/ej_logo.png" style="width: 505; height: 80%; padding-top: 20px ;" loading="lazy">
         </footer>
     </body>
 </html>

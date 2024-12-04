@@ -6,7 +6,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         });
     });
-    
-document.querySelector('.hamburger').addEventListener('click', () => {
-        document.querySelector('.gymNav').classList.toggle('active');
-});
