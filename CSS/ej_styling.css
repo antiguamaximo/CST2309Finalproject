@@ -141,14 +141,14 @@ input:focus, select:focus, textarea:focus {
     background-color: rgb(255, 255, 255);
  }
 
-input#fname:focus:valid,
+input#fName:focus:valid,
 input#email:focus:valid,
 input#password:focus:valid,
 input#cPassword:focus:valid{
    background: rgb(220, 255, 220);
 }
 
-input#fname:focus:invalid,
+input#fName:focus:invalid,
 input#email:focus:invalid,
 input#password:focus:invalid,
 input#cPassword:focus:invalid {

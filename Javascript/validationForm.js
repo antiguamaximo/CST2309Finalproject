@@ -5,6 +5,8 @@
     Maximo Antigua
     validateForm.js
 */
+
+// FOR MEMBERSHIP PAGE
 let regButton = document.getElementById("regButton");
 
 regButton.addEventListener("click", validatePassword);
@@ -71,3 +73,4 @@ window.addEventListener("load", function() {
 
   model.focus()
 });
+// FOR MEMBERSHIP PAGE
