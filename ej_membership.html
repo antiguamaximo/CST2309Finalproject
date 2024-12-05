@@ -40,18 +40,18 @@
         <main class="membershipPage">
 
             <div class="form">
-                    <form name="regForm" onsubmit="return validateRegForm()">
+                    <form name="regForm">
                         <h2>Registration Form</h2>
                         <label>Full Name</label>
-                        <input name="fname" id="fname" type="text" size="30" >
+                        <input name="fname" id="fname" type="text">
                         <label>E-Mail</label>
-                        <input name="email" id="email" type="email" size="30" >
+                        <input name="email" id="email" type="email" >
                         <label>Password</label>
-                        <input name="password"  type="password" size="50" >
+                        <input id="password" name="password"  type="password" minLength="6" maxlength="36" required>
                         <label>Confirm password</label>
-                        <input name="cPassword" id="cPassword" type="password" size="50"> <br>
+                        <input name="cPassword" id="cPassword" type="password"  minLength="6" maxlength="36" size="50" required> <br>
 
-                        <button class="regButton" type="submit" value="submit">Register</button>
+                        <button class="regButton" id="regButton" type="submit" value="submit">Register</button>
                     </form>
             </div>
 
