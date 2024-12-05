@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="./CSS/ej_base.css">
         <link rel="stylesheet" href="./CSS/ej_styling.css">
         <script src="./Javascript/baseJS.js" defer></script>
+        <script src="./Javascript/validationForm.js" defer></script>
     </head>
     <body>
         <header class="gymHeader">
@@ -42,16 +43,16 @@
             <div class="form">
                     <form name="regForm">
                         <h2>Registration Form</h2>
-                        <label>Full Name</label>
-                        <input name="fname" id="fname" type="text">
+                        <label>Name</label>
+                        <input name="fname" id="fName" type="text" minlength="3" required>
                         <label>E-Mail</label>
                         <input name="email" id="email" type="email" >
                         <label>Password</label>
-                        <input id="password" name="password"  type="password" minLength="6" maxlength="36" required>
+                        <input id="password" name="password"  type="password" minlength="6" required>
                         <label>Confirm password</label>
-                        <input name="cPassword" id="cPassword" type="password"  minLength="6" maxlength="36" size="50" required> <br>
+                        <input name="cPassword" id="cPassword" type="password"  minlength="6"> <br>
 
-                        <button class="regButton" id="regButton" type="submit" value="submit">Register</button>
+                        <button class="regButton" id="regButton" type="submit" value="Submit Information">Register</button>
                     </form>
             </div>
 
