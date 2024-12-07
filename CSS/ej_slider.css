@@ -1,7 +1,15 @@
-.hero-slider {
+@charset "utf-8";
+/*
+    Final Project
+    CST2309
+    Maximo Antigua
+    ej_slider.css
+*/
+
+.mSlider {
     position: relative;
     width: 100%;
-    height: calc(100vh - 100px); /* Adjust based on your header height */
+    height: calc(100vh - 100px);
     overflow: hidden;
 }
 
@@ -25,7 +33,7 @@
     object-fit: cover;
 }
 
-.slide-content {
+.sContent {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,16 +44,16 @@
     z-index: 2;
 }
 
-.slide-content h1 {
+.sContent h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
 }
 
-.slide-content p {
+.sContent p {
     font-size: 1.5rem;
 }
 
-.slider-btn {
+.sButton {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -59,7 +67,7 @@
     transition: background-color 0.3s;
 }
 
-.slider-btn:hover {
+.sButton:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
@@ -71,7 +79,7 @@
     right: 20px;
 }
 
-.slider-dots {
+.sDots{
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -94,7 +102,7 @@
     background: white;
 }
 
-/* Overlay for better text visibility */
+
 .slide::after {
     content: '';
     position: absolute;
@@ -103,20 +111,4 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .slide-content h1 {
-        font-size: 2rem;
-    }
-
-    .slide-content p {
-        font-size: 1rem;
-    }
-
-    .slider-btn {
-        padding: 0.5rem;
-        font-size: 1rem;
-    }
 }

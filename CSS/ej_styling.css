@@ -23,7 +23,7 @@ main {
     
 }
 
-.mainArticles p {
+.mainArticles p {32
     width: 70%;
     padding: 15px;
     flex: 2;
@@ -63,10 +63,6 @@ main {
     transform: scale(1.05);
 }
 
-/*Gallery*/
-
-
-
 /*Membership*/
 .membershipPage {
     background: url('../ASSETS/ej_GYM2.jpg') no-repeat center center/cover;
@@ -91,7 +87,7 @@ form input, form button {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-   
+   height: 100%;
 }
 form button {
     background-color: #202020;
@@ -153,4 +149,65 @@ input#email:focus:invalid,
 input#password:focus:invalid,
 input#cPassword:focus:invalid {
    background: rgb(255, 232, 233);
+}
+
+/* Footer Styles */
+.gymFooter {
+    background-color: #202020;
+    color: #fff;
+}
+
+.footerContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.footerSection {
+    flex: 1;
+    min-width: 250px;
+    margin: 1rem;
+}
+
+.footerLogo {
+    max-width: 200px;
+    height: auto;
+}
+
+.footerSection h3 {
+    color: #34495e;
+    font-weight: 700;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.footerLinks {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks li {
+    margin-bottom: 0.5rem;
+}
+
+.footerLinks a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+.footerLinks a:hover {
+    color: #718daa;
+}
+
+.footerBottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }

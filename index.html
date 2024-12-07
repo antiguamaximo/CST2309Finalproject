@@ -24,17 +24,17 @@
     <body>
 
         <header class="gymHeader">
-
             <h1 class="gymLogo">
-                <img src="./ASSETS/ej_logo.png" loading="lazy">
+                <img src="./ASSETS/ej_logo.png">
             </h1>
-            <ul class="gymNav">
-                <li><a href="#">Home</a></li>
-                <li><a href="./ej_membership.html">Membership</a></li>
-                <li><a href="./index.html">About Us</a></li>
-                <li><a href="./ej_contactus.html">Contact Us</a></li>
-            </ul>
-
+            <nav>
+                <ul class="gymNav">
+                    <li><a href="./ej_home.html">Home</a></li>
+                    <li><a href="./index.html">About Us</a></li>
+                    <li><a href="./ej_membership.html">Register</a></li>
+                    <li><a href="./ej_contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main>
@@ -70,16 +70,25 @@
 
         </main>
 
-        <footer>
-            <div class="footerLinks">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="index.html">About Us</a></li>
-                    <li><a href="ej_membership.html">Membership</a></li>
-                    <li><a href="./ej_contactus.html">Contact Us</a></li>
-                </ul>
+
+        <footer class="gymFooter">
+            <div class="footerContainer">
+                <div class="footerSection">
+                    <img src="./Assets/ej_logo.png" alt="El Jim Logo" class="footerLogo">
+                </div>
+                <div class="footerSection">
+                    <h3 class="qLinks">Quick Links</h3>
+                    <ul class="footerLinks">
+                        <li><a href="./ej_home.html">Home</a></li>
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="ej_membership.html">Membership</a></li>
+                        <li><a href="./ej_contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
-            <img src="./Assets/ej_logo.png" style="width: 505; height: 80%; padding-top: 20px ;" loading="lazy">
+            <div class="footerBottom">
+                <p>&copy; 2024 El Jim Gym. All rights reserved.</p>
+            </div>
         </footer>
     </body>
 </html>

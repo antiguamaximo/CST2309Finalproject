@@ -6,6 +6,7 @@
     validateForm.js
 */
 
+
 // FOR MEMBERSHIP PAGE
 let regButton = document.getElementById("regButton");
 
@@ -73,4 +74,3 @@ window.addEventListener("load", function() {
 
   model.focus()
 });
-// FOR MEMBERSHIP PAGE

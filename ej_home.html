@@ -8,69 +8,79 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>Home - Equinox Gym</title>
+        <title>Home</title>
 
         <link rel="icon" href="./ASSETS/ej_smallLogo.png">
         <link rel="stylesheet" href="./CSS/ej_base.css">
         <link rel="stylesheet" href="./CSS/ej_styling.css">
-        <link rel="stylesheet" href="./CSS/home-slider.css">
+        <link rel="stylesheet" href="./CSS/ej_slider.css">
         <script src="./Javascript/baseJS.js" defer></script>
-        <script src="./Javascript/home-slider.js" defer></script>
     </head>
     <body>
         <header class="gymHeader">
             <h1 class="gymLogo">
                 <img src="./ASSETS/ej_logo.png">
             </h1>
-            <ul class="gymNav">
-                <li><a href="#">Home</a></li>
-                <li><a href="./ej_membership.html">Membership</a></li>
-                <li><a href="./index.html">About Us</a></li>
-                <li><a href="./ej_contactus.html">Contact Us</a></li>
-            </ul>
+            <nav>
+                <ul class="gymNav">
+                    <li><a href="./ej_home.html" >Home</a></li>
+                    <li><a href="./index.html">About Us</a></li>
+                    <li><a href="./ej_membership.html">Register</a></li>
+                    <li><a href="./ej_contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main>
-            <div class="hero-slider">
+            <div class="mSlider">
                 <div class="slides">
                     <div class="slide">
-                        <img src="./ASSETS/slider1.jpg" alt="Gym Equipment">
-                        <div class="slide-content">
-                            <h1>Welcome to Equinox</h1>
-                            <p>Elevate Your Fitness Journey</p>
+                        <img src="./ASSETS/EJ_GYM10.jpg" alt="Welcome">
+                        <div class="sContent">
+                            <h1>Welcome to<br> EL JIM</h1>
+                            <p>We put the tipico in <br>your fitness experience.</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="./ASSETS/slider2.jpg" alt="Training Session">
-                        <div class="slide-content">
-                            <h1>Expert Training</h1>
-                            <p>Professional Guidance for Every Level</p>
+                        <img src="./ASSETS/EJ_GYM6.jpg" alt="Never judged">
+                        <div class="sContent">
+                            <h1>Training</h1>
+                            <p>Never feel  judged in your <br> fitness journey</p>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="./ASSETS/slider3.jpg" alt="Luxury Facilities">
-                        <div class="slide-content">
-                            <h1>Luxury Facilities</h1>
-                            <p>Experience Premium Fitness</p>
+                        <img src="./ASSETS/ej_GYM3.jpg" alt="Facilities">
+                        <div class="sContent">
+                            <h1>Facilities</h1>
+                            <p>Well kept facilites <br>
+                                for your comfort</p>
                         </div>
                     </div>
                 </div>
-                <button class="slider-btn prev">&#10094;</button>
-                <button class="slider-btn next">&#10095;</button>
-                <div class="slider-dots"></div>
+                <button class="sButton prev">&#10094;</button>
+                <button class="sButton next">&#10095;</button>
+                <div class="sDots"></div>
             </div>
         </main>
 
         <footer class="gymFooter">
-            <div class="footerLinks">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="index.html">About Us</a></li>
-                    <li><a href="ej_membership.html">Membership</a></li>
-                    <li><a href="./ej_contactus.html">Contact Us</a></li>
-                </ul>
+            <div class="footerContainer">
+                <div class="footerSection">
+                    <img src="./Assets/ej_logo.png" alt="El Jim Logo" class="footerLogo">
+                </div>
+                <div class="footerSection">
+                    <h3 class="qLinks">Quick Links</h3>
+                    <ul class="footerLinks">
+                        <li><a href="./ej_home.html">Home</a></li>
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="ej_membership.html">Membership</a></li>
+                        <li><a href="./ej_contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
-            <img src="./Assets/ej_logo.png" style="width: 505; height: 80%; padding-top: 20px ;" loading="lazy">
+            <div class="footerBottom">
+                <p>&copy; 2024 El Jim Gym. All rights reserved.</p>
+            </div>
         </footer>
     </body>
 </html>
